@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(14, 62, 46);
+            padding: 20px;
+            box-sizing: border-box;
+            /* the width of div remains at 200px, in spit of 20px of left padding and 20px of right padding because of box-sizing: border-box property */
+            /* It also makes sure that the content moves but the dimension of the box remains same */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">I am</div>
+    <div id="div2">Aditya</div>
+</body>
+</html>

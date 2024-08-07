@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Lisa in CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0e5d8;
+        }
+        .mona-lisa {
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+        .face {
+            position: absolute;
+            top: 60px;
+            left: 50px;
+            width: 100px;
+            height: 120px;
+            background: #f5cbb1;
+            border-radius: 50%;
+        }
+        .eyes {
+            position: absolute;
+            top: 90px;
+            left: 75px;
+            width: 50px;
+            height: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .eye {
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+        }
+        .mouth {
+            position: absolute;
+            top: 150px;
+            left: 75px;
+            width: 50px;
+            height: 10px;
+            background: #000;
+            border-radius: 0 0 25px 25px;
+        }
+        .hair {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 140px;
+            height: 70px;
+            background: #3d1f1f;
+            border-radius: 50%;
+            clip-path: ellipse(60% 40% at 50% 50%);
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(to bottom, #8b5e3c, #e0bda4);
+            border-radius: 15px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="mona-lisa">
+        <div class="background"></div>
+        <div class="hair"></div>
+        <div class="face">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+</body>
+</html>
