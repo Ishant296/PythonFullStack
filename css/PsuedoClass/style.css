@@ -1,0 +1,32 @@
+h1{
+    background-color: blueviolet;
+    color: white;
+}
+
+h1:hover{
+    background-color: aliceblue;
+    color: blueviolet;
+}
+
+input:focus{
+    background-color: burlywood;
+    color: crimson;
+}
+
+a:link, a:visited{
+    color: coral;
+    background-color: darkred;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkred;
+    background-color: coral;
+    text-decoration: wavy;
+    font-family: cursive;
+}
+
+a:active{
+    background-color: darkmagenta;
+}
