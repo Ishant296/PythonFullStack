@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before {
+            /* content: " before "; */
+            content: url("/images/bullet2.png");
+        }
+
+        h1::after {
+            content: url("/images/bullet2.png");
+        }
+
+        ::selection {
+            background-color: aqua;
+            color: red;
+        }
+
+
+        ul {
+            list-style-type: lower-alpha;
+        }
+
+
+        ::marker {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>sssss</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil ullam earum, ab necessitatibus repellat
+        vitae dolorem beatae odit distinctio at, totam laborum eius eaque! Quae adipisci facere repudiandae voluptate.
+    </p>
+
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>thre</li>
+    </ul>
+</body>
+
+</html>
