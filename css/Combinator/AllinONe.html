@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllInOne</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        div h1 {
+            color: red;
+        }
+
+        div>h1 {
+            text-decoration: line-through;
+        }
+
+        div+h1 {
+            background-color: purple;
+        }
+
+        div~h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is outside div</h1>
+    <div>
+        <h1>This is one</h1>
+        <h2>This is h2</h2>
+        <h1>This is two</h1>
+        <section>
+            <h1>This is inside section</h1>
+        </section>
+        <h1>This is outside section</h1>
+    </div>
+    <h1>This is outside div</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste non quae labore tenetur reiciendis reprehenderit.
+    </p>
+    <h1>This is the end</h1>
+</body>
+
+</html>

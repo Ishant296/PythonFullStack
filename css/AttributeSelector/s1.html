@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <style>
+        a[target] {
+            color: red;
+            text-decoration: line-through;
+        }
+
+        img[alt] {
+            width: 100px;
+            height: 100px;
+        }
+
+        a[target="_blank"] {
+            background-color: aqua;
+            margin: auto;
+            padding: 10px;
+        }
+
+        [alt~="round"] {
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <a href="https://www.google.com" target="_self">Link1</a>
+    <br>
+    <br>
+    <br>
+
+    <a href="https://www.google.com" target="_blank">Link1</a>
+    <br>
+    <br>
+
+    <img src="/images/gojo 1.jpg" alt="this is gojo round" title="">
+    <br>
+    <img src="/images/gojo 1.jpg" alt="this is gojo square" title="">
+
+
+</body>
+
+</html>
+<!-- 
+
+    attribute selectore:
+        it is used to select  elements with specified attribute
+        [attribute]
+        [attribute="value"]  
+            :is used o select  elements with specifed attribute and value
+        [attribute~="value"]
+            :is used to select elemnts with an attribute value 
+            conatining a specifed word
+
+            
+ 
+        -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table+Form</title>
+    <style>
+        table {
+            background-color: purple;
+            padding: 40px;
+            margin: auto;
+            box-shadow: 5px 5px 4px rgb(236, 160, 236);
+        }
+
+        label {
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            color: beige;
+            text-shadow: 1px 1px 0.5px rgb(156, 148, 148);
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 3px 3px 10px violet;
+            font-size: x-large;
+            background-color: whitesmoke;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        input {
+            border: none;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="">
+            <tr>
+                <td>
+                    <label for="">
+                        Username
+                    </label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">
+                        Email
+                    </label>
+                </td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">
+                        Password
+                    </label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
