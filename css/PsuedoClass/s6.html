@@ -1,0 +1,49 @@
+<!-- 
+ :only-of-type{} applies the css to a unique element which is writen before :, that means it can only be applied to a single element which is unique (never repeated), it is not effected if there are elements not of its type -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           div{
+            width: 300px;
+            border: 2px solid black;
+            margin: 10px;
+           }
+              p:only-of-type{
+                   background-color: aqua;
+              }
+
+              h1:only-of-type{
+                background-color: blue;
+              }
+
+    </style>
+</head>
+<body>
+
+    <div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <h1>mmmmmmmm</h1>
+          <h1>mmmmmmmm</h1>
+          
+          
+    </div>
+
+         <div>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <h1>welcome eto my class</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+           
+              
+         </div>
+     
+
+      
+    
+</body>
+</html>

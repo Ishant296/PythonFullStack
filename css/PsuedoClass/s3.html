@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked{
+            height: 25px;
+            width: 25px;
+        }
+
+        input:disabled{
+            background-color: darkmagenta;
+        }
+        input:enabled{
+            background-color: aquamarine;
+        }
+        input:required{
+            background-color: crimson;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="checkbox">First <br>
+        <input type="checkbox" checked>Second <br>
+        <input type="checkbox">Third
+        <br><br>
+    
+        <input type="text" value="Aditya Meshram" disabled><br><br>
+        <input type="text" value="Aditya Meshram" enabled><br><br>
+    
+        <input type="text" placeholder="enter name" required><br><br>
+    
+        <input type="submit">
+    </form>
+</body>
+</html>
