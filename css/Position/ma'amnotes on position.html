@@ -1,0 +1,167 @@
+<!-- 
+  position property specify  the type of positioning  method used for an element
+  (static ,reletive,fixed ,absoulute or sticky)
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            position: static;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to my class</h1>
+</body>
+
+</html>
+<!-- 
+    position property specify  the type of positioning  method used for an element
+    (static ,reletive,fixed ,absoulute or sticky)
+
+    relative :
+      An element with this property  is  positioned to its 
+      normal position
+
+      top right bottom left 
+      reletively  posotioned  elemnet will couses its to be 
+      adjusted away from its normal position 
+    other content will not be adjusted to fit into any gap
+    left by the element
+
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            position: relative;
+            top: 80px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to my class</h1>
+    <h2>Something</h2>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome</h1>
+    <h2>Something</h2>
+
+</body>
+
+</html>
+
+<!-- 
+    Absoulte  :
+    an element with this position is positined reletive to
+    the naerest positioned ancestore 
+    (insted of positioned rleletive to the viewport like fixed)
+ 
+  if an absoulte  positined  element has no positined it uses
+  the document body and move along page scrolling
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+    <h1>Welcome</h1>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+
+        h3 {
+            position: absolute;
+            top: 30px;
+            left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+    <h3>Welcome</h3>
+
+</body>
+
+</html>

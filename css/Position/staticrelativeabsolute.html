@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #static{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        #relative{
+            width: 100px;
+            height: 100px;
+            background-color: mediumspringgreen;
+            border: 2px solid black;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        #absolute{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="static"></div>
+    <div id="relative"></div>
+    <div id="absolute"></div>
+    
+</body>
+</html>
+
+<!-- The position property is used to specify the position of an element -->
+ <!-- 
+    position property specify  the type of positioning  method used for an element
+    (static ,reletive,fixed ,absoulute or sticky)
+
+    relative :
+      An element with this property  is  positioned to its 
+      normal position
+
+      top right bottom left 
+      reletively  posotioned  elemnet will couses its to be 
+      adjusted away from its normal position 
+    other content will not be adjusted to fit into any gap
+    left by the element
+
+    -->
+
+    <!-- 
+    Absoulte  :
+    an element with this position is positined reletive to
+    the naerest positioned ancestore 
+    (insted of positioned rleletive to the viewport like fixed)
+ 
+  if an absoulte  positined  element has no positined it uses
+  the document body and move along page scrolling
+
+-->
