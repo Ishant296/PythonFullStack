@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            border: 2px solid black;
+            transition: width 3s, height 3s;
+            margin: 10px;
+        }
+
+        #div1:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+        #div2{
+            width:100px;
+            height: 100px;
+            background-color:blue;
+            transition-property: width; /*on which property the transition is applied*/
+            transition-duration: 3s;/*for how much time*/
+            transition-delay: 1s;/*after how much time*/
+            transition-timing-function: ease-in;/*timing function used*/
+        }
+
+        #div2:hover{
+            width: 200px;
+        }
+
+        #div3{
+            width:100px;
+            height: 100px;
+            background-color:darkgoldenrod;
+            margin: 10px;
+            border: 2px solid black;
+            transition: transform 3s ease-out; /*short hand
+            what to apply  for how much time  timing funciton  delay*/
+        }
+
+        #div3:hover{
+            transform: translate(100px);
+        }
+
+        #div4{
+            width:100px;
+            height: 100px;
+            margin: 10px;
+            border: 8px dotted black; 
+            border-radius: 50%; 
+            transition: transform 4s ease-out 1s
+        }
+
+        #div4:hover{
+            transform: rotate(60deg);
+        }
+
+
+        h1{
+               margin: 100px;
+           }
+           span
+           {
+              display: inline-block;
+              
+         margin: 3px;
+            
+            
+           }
+           span:nth-child(even){
+            background-color: aqua;
+            color: red;
+           
+            transition: transform 2s;
+            padding: 0px 10px;
+           }
+           span:nth-child(even):hover{
+            color: blue;
+            /* transform: rotate(90deg); */
+            transform: translateY(100px);
+           }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <h1>
+        <span>w</span>
+        <span>e</span>
+        <span>l</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+
+ </h1>
+    
+</body>
+</html>
+
+<!-- 
+     transition: 
+     this allow  to change property value smoothly ,over given condition.
+
+  transition-timing-function
+
+   ease: specify transition with a slow start then fast,then end slowly
+
+   liner: specify a trannsition effect with same speed from start to end
+
+   ease-in : specify a transition effect with slow start
+
+    ease-out : specify a transition effect with slow end
+ 
+    ease-in-out : specify a transition effect with slow start slow end
+
+
+    transition-delay 
+
+ -->

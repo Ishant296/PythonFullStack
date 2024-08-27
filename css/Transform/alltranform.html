@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color:aquamarine ;
+            border: 2px solid black;
+            transform: translate(20px, 30px); /*translateX(20px) and translateY(30px)*/
+        }/*translate is used to move things up and down*/
+
+        #div2{
+            width: 100px;
+            height: 100px;
+            background-color:tomato ;
+            border: 2px solid black;
+            margin: 40px;
+            transform: rotate(30deg);
+        }/*rotate is used to rotate*/
+
+        #div3{
+            width: 100px;
+            height: 100px;
+            background-color: orange ;
+            border: 2px solid black;
+            transform: scale(2,2);/*scaleX(2) scaleY(2)*/
+            margin: 80px;
+        }/*scale is used to change the size of something*/
+
+        #div4{
+            width: 100px;
+            height: 100px;
+            background-color: violet ;
+            border: 2px solid black;
+            transform: skew(20deg,30deg);/*skewX(20deg) skewY(30deg)*/
+            margin: 20px;
+        }/*skew moves it in a plane*/
+
+        #div5{
+            width: 100px;
+            height: 100px;
+            background-color: darkmagenta;
+            border: 2px solid black;  
+            transform: matrix(1,-0.7,2,2,50,60);
+            margin: 50px;
+        }    /* matrix (scaleX ,skewY,skewX,scaleY,translateX,translatey) */
+        /*All in one tranform*/
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+
+
+    
+</body>
+</html>
+
+<!-- transform: translateX, translateY, translateZ, translate(x,y,z)
+    rotate(degree), scale(x,y), scaleX, scaleY, skew, skewX, skewY,
+    matrix (scaleX, skewY, skewX, scaleY, translateX, translateY) -->
