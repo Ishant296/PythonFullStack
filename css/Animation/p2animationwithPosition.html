@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimationWithPosition</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        #divin{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: absolute;
+            animation-name: move;/*is used as the key to apply keyframe*/
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;/*reverse, alternate, alternate-reverse, normal*/
+            animation-timing-function: ease-in;/*works according to the transation definition all values from there can be used*/
+            animation-fill-mode:backwards ;/* sets how a CSS animation applies styles to its target before and after its execution.*/
+        }
+
+        @keyframes move {
+            0%{
+                left: 0px;
+                top:0px;
+                background-color: aquamarine;
+                border-radius: 0%;
+            }
+
+            25%{
+                left: 200px;
+                top: 0px;
+                background-color: aqua;
+                border-radius: 25%;
+            }
+
+            50%{
+                top: 200px;
+                left: 200px;
+                background-color: blue;
+                border-radius: 50%;
+            }
+
+            75%{
+                left: 0px;
+                top:200px;
+                background-color: cornflowerblue;
+                border-radius: 25%;
+            }
+
+            100%{
+                left: 0px;
+                top:0px
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div id="divin"></div>
+    </div>
+    
+</body>
+</html>

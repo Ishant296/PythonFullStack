@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Part 1(duration name iteration dirction)</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            animation-name: demo;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            color: white;
+        }
+
+        h2{
+            animation-name: demo2;
+            animation-duration: 3s; /*for time span it will work*/
+            animation-iteration-count: infinite;/*when to stop*/
+            color: whitesmoke;
+            animation-direction: alternate  ;/*dirction of the animation*/
+        }
+
+        @keyframes demo {
+            0%{
+                color: beige;
+
+            }
+            25%{
+                color: yellow;
+
+            }
+            50%{
+                color: blueviolet;
+
+            }
+            75%{
+                color: crimson;
+
+            }
+            100%{
+                color: red;
+
+            }
+        }
+
+        @keyframes demo2 {
+
+            from{
+                color: wheat;
+                transform: scale(1,1);
+
+            }
+
+            to{
+                color: rgb(238, 188, 233);
+                transform: scale(0.5,0.5);
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the world of lights</h1>
+    <h2>This is the second demo</h2>
+    
+</body>
+</html>
+
+<!-- 
+
+  css allow  animation of html elemnet
+
+     @keyframe
+     animation-name
+     animation-duration
+     animation-delay
+     animation-itration-count
+     animation-direction
+     animation-function
+     animation-fill-mode
+     animation
+
+
+
+       An animation lets an elment gradully change from one
+        style to another stayle
+
+ -->
