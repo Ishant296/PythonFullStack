@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageProperties</title>
+    <style>
+        img{
+            /* filter: blur(1px); */
+            /* filter: brightness(22%); */
+            /* filter: contrast(500%); */
+            /* filter: drop-shadow(5px 5px 5px); */
+            /* filter: grayscale(50%); */
+            /* filter: hue-rotate(40deg); */
+            /* filter: opacity(100%); */
+            /* filter: saturate(5); */
+            /* filter: sepia(100%); */
+            animation: gojo 6s ease-in infinite;
+        }
+        @keyframes gojo {
+
+            0%{
+                filter: blur(1px) brightness(22%); 
+            }
+            25%{
+                filter: contrast(500%) drop-shadow(5px 5px 5px);
+            }
+            50%{
+                filter: grayscale(50%) hue-rotate(40deg);
+            }
+            100%{
+                filter: saturate(5) sepia(100%);
+                
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="/images/gojo 1.jpg" alt="gojo" width="200px" height="200px">
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square in square</title>
+    <style>
+        .root{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative;
+            animation: inout 4s linear infinite ;
+        }
+
+        .one{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            background-color: crimson;
+            color: antiquewhite;
+            z-index: 3;
+            animation: inout1 4s linear infinite ;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background-color: orange;
+            color: antiquewhite;
+            z-index: 2;
+            animation: inout2 4s linear infinite ;
+        }
+
+        .three{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            background-color: violet;
+            color: antiquewhite;
+            z-index: 2;
+            animation: inout3 6s ease infinite ;
+        }
+
+        @keyframes inout1 {
+            0%{
+                z-index: 1;
+                opacity: 100%;
+            }
+            50%{
+                z-index: 2;
+                opacity: 50%;
+            }
+            100%{
+                z-index: 3;
+                opacity: 100%;
+            }
+        }
+        @keyframes inout2 {
+            0%{
+                z-index: 3;
+                opacity: 100%;
+            }
+            50%{
+                z-index: 2;
+                opacity: 50%;
+            }
+            100%{
+                z-index: 1;
+                opacity: 100%;
+            }
+        }
+        @keyframes inout3 {
+            0%{
+                z-index: 2;
+                opacity: 50%;
+            }
+            50%{
+                z-index: 3;
+                opacity: 100%;
+            }
+            100%{
+                z-index: 1;
+                opacity: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="root">
+        <div class="one">ONE</div>
+        <div class="two">TWO</div>
+        <div class="three">THREE</div>
+    </div>
+    
+</body>
+</html>
