@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            background-color: rgb(38, 19, 19);
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        li {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 20px;
+            color: crimson;
+            text-shadow: 4px 4px 3px purple;
+            animation: welcome 3.5s ease-in infinite;
+        }
+
+        @keyframes welcome {
+            0% {
+                color: crimson;
+            }
+
+            25% {
+                transform: translateY(-50px);
+                color: rgb(79, 79, 220);
+                opacity: 0.5;
+            }
+
+            75% {
+                transform: translateY(50px);
+                color: rgb(16, 148, 102);
+                opacity: 0.3;
+            }
+
+            100% {
+                color: crimson;
+            }
+        }
+
+        ul>li:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        ul>li:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        ul>li:nth-child(3) {
+            animation-delay: 1.0s;
+        }
+
+        ul>li:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        ul>li:nth-child(5) {
+            animation-delay: 2.0s;
+        }
+
+        ul>li:nth-child(6) {
+            animation-delay: 2.5s;
+        }
+
+        ul>li:nth-child(7) {
+            animation-delay: 3.0s;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>W</li>
+        <li>E</li>
+        <li>L</li>
+        <li>C</li>
+        <li>O</li>
+        <li>M</li>
+        <li>E</li>
+    </ul>
+
+</body>
+
+</html>
