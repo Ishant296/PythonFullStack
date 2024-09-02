@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: aqua;
+            grid-template-columns: 100px 100px 100px;
+            padding: 20px;
+            gap: 10px;
+            column-gap: 10px;
+        }
+
+        .container>div{
+            background-color: red;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+        <div>six</div>
+    </div>
+    
+</body>
+</html>
+<!-- css grid offers a grid based layout with rows and columns, 
+ we don't need to use float or position -->

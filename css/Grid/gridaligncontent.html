@@ -1,0 +1,64 @@
+<!-- 
+
+    the css grid layout  module  offers  a grid-based layout system ,with rows and column ,
+    making it easier to design web pages without having to use float and postion property
+  
+   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligncontent</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            padding: 20px;
+            gap: 10px;
+            height: 300px;
+            /* align-content:stretch ;  */
+            /*align-content: baseline;*/
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content:space-around ; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+            justify-content: space-evenly;
+
+        }
+
+        .container>div {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>foure</div>
+        <div>five</div>
+        <div>six</div>
+    </div>
+
+
+
+</body>
+
+</html>
+<!-- 
+  align content moves vertically
+  -->
