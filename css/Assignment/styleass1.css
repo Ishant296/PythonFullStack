@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./background.jpg);
+}
+
+.sun {
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  animation: enter 2s linear 1;
+}
+
+@keyframes enter {
+  0% {
+    scale: 20;
+  }
+  25% {
+    scale: 15;
+  }
+  50% {
+    scale: 10;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mercury-orbit {
+  width: 150px;
+  height: 150px;
+  animation: rotation 10s infinite linear;
+}
+
+.venus-orbit {
+  width: 200px;
+  height: 200px;
+  animation: rotation 15s infinite linear;
+}
+
+.earth-orbit {
+  width: 250px;
+  height: 250px;
+  animation: rotation 20s infinite linear;
+}
+
+.mars-orbit {
+  width: 300px;
+  height: 300px;
+  animation: rotation 25s infinite linear;
+}
+
+.jupiter-orbit {
+  width: 400px;
+  height: 400px;
+  animation: rotation 30s infinite linear;
+}
+
+.saturn-orbit {
+  width: 500px;
+  height: 500px;
+  animation: rotation 35s infinite linear;
+}
+
+.uranus-orbit {
+  width: 600px;
+  height: 600px;
+  animation: rotation 40s infinite linear;
+}
+
+.neptune-orbit {
+  width: 700px;
+  height: 700px;
+  animation: rotation 45s infinite linear;
+}
+
+.pluto-orbit {
+  width: 800px;
+  height: 800px;
+  animation: rotation 50s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 25%;
+  }
+  25% {
+    transform: rotate(30deg);
+    opacity: 50%;
+  }
+  50% {
+    transform: rotate(60deg);
+    opacity: 75%;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
+  }
+}
+
+.mercury,
+.venus,
+.earth,
+.mars,
+.jupiter,
+.saturn,
+.uranus,
+.neptune,
+.pluto {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mercury {
+  background-color: gray;
+}
+
+.venus {
+  background-color: orange;
+}
+
+.earth {
+  background-color: blue;
+}
+
+.mars {
+  background-color: red;
+}
+
+.jupiter {
+  background-color: brown;
+  width: 30px;
+  height: 30px;
+}
+
+.saturn {
+  background-color: goldenrod;
+  width: 25px;
+  height: 25px;
+}
+
+.uranus {
+  background-color: lightblue;
+  width: 22px;
+  height: 22px;
+}
+
+.neptune {
+  background-color: darkblue;
+  width: 22px;
+  height: 22px;
+}
+
+.pluto {
+  background-color: lightgray;
+  width: 10px;
+  height: 10px;
+}
