@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+            .flex-container{
+                 display: flex;
+                 background-color: aqua;
+                height: 300px;
+             flex-wrap: wrap;
+            
+        
+                 
+        }
+
+        .flex-container>div{
+              
+             padding:20px;
+             margin: 10px;
+             font-size:30px;
+             background-color: black;
+             color:white;
+            }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div>1aaa</div>
+        <div style="align-self: center;">2b</div>
+        <div style="align-self:flex-end;">3ccc</div> <!--it will align the element it is used on different from others -->
+        <div style="align-self: first baseline;">4ddd</div>
+    
+         
+    </div>
+    
+</body>
+</html>
