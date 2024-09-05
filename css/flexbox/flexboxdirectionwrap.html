@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: crimson;
+            /*flex-direction: column;*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction:column-reverse;*/
+
+            /*flex-direction decides in which direction the content in the flexbox will flow*/
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*It is used when the text goes beyond screen size and we want it to adjust*/
+        }
+
+        .flex-container>div {
+            font-size: 50px;
+            font-weight: bolder;
+            background-color: orange;
+            padding: 20px;
+            margin: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+    </div>
+
+</body>
+
+</html>
