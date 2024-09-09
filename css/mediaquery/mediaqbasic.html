@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            padding: 20px;
+               text-align: center;
+               border: 2px solid black;
+               color: #FF885B;
+               background-color: #557C56;
+        }
+         /* media uery for screen larger than 768pixels */
+         @media screen and (min-width:800px) 
+         {
+                     body{
+                              background-color:#9f0808;
+                     }
+                     div{
+                         color: #cef107;  
+                     }
+         }
+
+         
+      /* media uery for screen larger than 768pixels */
+      @media screen and (max-width:800px) 
+         {
+                     body{
+                              background-color:#624E88;
+                     }
+                     div{
+                         color: #472a2a;  
+                     }
+         }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to the Chamlion world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate mollitia, magnam eaque nemo, laborum quam, quaerat veniam provident exercitationem sint excepturi? Impedit voluptatem, iste libero non dolorem voluptas exercitationem unde?</p>
+    </div>
+</body>
+</html>

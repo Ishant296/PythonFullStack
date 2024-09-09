@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+        article{
+            background-color: aqua;
+        }
+        aside{
+        width:300px;
+        height: 500px;
+        border: 2px solid black;
+      }
+      bdi{
+             background-color: rgb(91, 172, 172);
+             padding: 5px;
+          }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>The article title</h1>
+        <p>This is the contents of the article element.</p>
+      </article> 
+      <!-- article used to write articles and gives margin and padding which is required for an article -->
+       <article>
+          <h1>The article title</h1>
+          <p>This is the contents of the article element.</p>
+        </article>
+
+        <aside>
+            <h4>The aside element</h4>
+            <p>My definition of the aside element would be "information either unrelated or loosely related to the main content of a page should go in aside tags" – however, that is not W3C's definition. They write: "The aside element represents content that is tangentially related to the content that forms the main textual flow of a document."</p>
+          </aside> <!--Puts content to the side-->
+
+          <p>
+            BDI stands for Bi-Directional Isolation.
+            
+            The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it.
+            
+            This element is useful when embedding user-generated content with an unknown text direction.
+            </p>
+            
+            <ul>
+             <li>User <bdi>XYZ</bdi>: 60 points</li>
+             <li>User <bdi>PQR</bdi>: 80 points</li>
+             <li>User <bdi>محبت کے</bdi>: 90 points</li>
+             <li>user<bdi> समाविष्ट केले गेलेलं आहेत.</bdi></li>
+            </ul> 
+            <!-- bdi is usually used for marking stuff like a highlighter -->
+
+            <h1>About the ASIDE TAG</h1>
+            <p>Here is a quote from the program:</p>
+            <blockquote cite="s3.html">
+                My definition of the aside element would be "information either unrelated or loosely related to the main content of a page should go in aside tags"  however, that is not W3C's definition. They write: "The aside element represents content that is tangentially related to the content that forms the main textual flow of a document."
+            </blockquote>
+            <!-- blockquote is used by developers to show discription of a site whoes link can be shown here -->
+
+            <details>
+                <summary>Copyright &copy; 2015</summary>
+                <p>- by SevenMentor. All Rights Reserved.</p>
+                <p>Visit the website for more details</p>
+               
+            </details>
+            <!-- details and summary should be used in combination otherwise there won't be a the kind of details shown in it, it will simply say details rather then what is written in summary -->
+
+            <!--This dialog box is visible because we mentioned the OPEN attribute in the HTML tag-->
+            <dialog open>This is an open dialog window</dialog>
+            <!--This dialog box is not visible because we did not mention the OPEN attribute in the HTML tag-->
+            <dialog>This is a hidden dialog window</dialog>   
+</body>
+</html>
