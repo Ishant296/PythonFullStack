@@ -1,0 +1,37 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: space-evenly;
+  background-color: #9b8ab4;
+}
+
+#navbar > div,
+a {
+  padding: 20px;
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar>div:hover{
+    font-size: 40px;
+    color: white;
+    background-color: #27254C;
+
+}
+.nanum-myeongjo-bold {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }

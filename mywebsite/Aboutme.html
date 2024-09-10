@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e2746;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .description-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .description-section h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .button-section {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #12335b;
+            color: #bdffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #0a64d2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-section img {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .button-section {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="./myimageweb.jpeg" alt="My Photo">
+        </div>
+
+        <div class="description-section">
+            <h1>Hey there! I'm Aditya 👋</h1>
+            <p>
+                Welcome to my little corner of the internet, where HTML, CSS, and creativity collide! I'm a budding web
+                developer who can make websites look cooler than a shonen protagonist entering battle. 🌟
+            </p>
+            <br>
+            <p>When I'm not knee-deep in code, you’ll find me lost in anime (yes, I can totally recommend the best
+                ones) or spinning up stories like a creative wizard. Some say I'm a bit mystic too... but I’ll let you
+                figure that one out. 😏</p>
+            <br>
+            <p>Though I'm new to the web development world, my enthusiasm is at max level—like a hero just
+                discovering
+                their powers. So, stick around, and let's make something awesome!</p>
+        </div>
+
+        <div class="button-section">
+            <a href="index.html" class="home-button">Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
