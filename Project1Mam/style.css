@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+  color: green;
+}
+body {
+  background-color: #eee;
+  scroll-behavior: smooth;
+}
+:root {
+  --green: rgb(28, 230, 93);
+  --black: rgb(7, 7, 41);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: lightgreen;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+.main-div {
+}
+
+.container {
+  padding: 0 10%;
+}
+.header {
+  width: 100%;
+  transition: 0.4s;
+  box-shadow: 1px 3px 7px #000100;
+}
+.nav-bar-1 {
+  width: 100%;
+  background-color: var(--green);
+  padding: 5px 0;
+}
+.header .nav-bar-1 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}
+.header .nav-bar-1 .logo {
+  font-size: 2rem;
+  /* color: #eee; */
+  font-weight: bold;
+}
+.header .nav-bar-1 .logo i {
+  color: #eee;
+}
+.header .nav-bar-1 .search {
+  position: relative;
+}
+.header .nav-bar-1 .search input {
+  width: 200px;
+  padding: 5px 30px 5px 10px;
+  outline: none;
+}
+
+.header .nav-bar-1 .search .fas {
+  color: var(--green);
+
+  font-size: 1.2erm;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+.header .nav-bar-2 {
+  background-color: var(--black);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav-bar-2 .nav,
+.icons {
+  display: flex;
+  list-style: none;
+}
+.header .nav-bar-2 .nav li,
+.icons li i {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.header .nav-bar-2 .nav li:hover,
+.icons li i:hover {
+  color: var(--green);
+}
+
+.home .imgBx {
+  width: 500px;
+  height: 500px;
+}
+.home .imgBx img {
+  max-width: 500px;
+}
+.home {
+  width: 100%;
+  min-height: 80vh;
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+}
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.home .content {
+  width: 50%;
+}
+
+.home .content p {
+  font-size: 2rem;
+  padding: 10px 0;
+  text-align: left;
+  color: var(--black);
+  margin: 10px 0;
+}
+
+.home .content h1 {
+  padding: 10px 0;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.home .content h1 span {
+  color: var(--green);
+}
+
+a.btn {
+  font-size: 1rem;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 03;
+}
+
+a.btn:hover {
+  background-color: var(--black);
+  color: var(--green);
+}
