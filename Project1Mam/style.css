@@ -15,6 +15,10 @@ body {
   --green: rgb(28, 230, 93);
   --black: rgb(7, 7, 41);
 }
+::selection {
+  background-color: var(--green);
+  color: var(--black);
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -306,10 +310,7 @@ a.btn:hover {
   width: 100%;
   padding: 20px 0;
 }
-/* .products1 .container{
-    box-shadow: 1px 3px 10px #0001;
-    padding: 10px 20px;background-color: #fff;
-} */
+
 .products .field {
   flex-wrap: wrap;
 }
@@ -420,4 +421,104 @@ a.btn:hover {
 }
 .products .field .shop {
   margin-bottom: -10px;
+}
+
+/* slogan */
+.slogan {
+  background-image: url(./projectimages/images/slogan-bg.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slogan .msg {
+  width: 100%;
+  text-align: center;
+}
+
+.slogan .msg h2 {
+  font-size: 2rem;
+  color: var(--black);
+  text-shadow: 1px 2px 3px #fff;
+}
+
+.slogan .msg p {
+  color: #fff;
+  text-shadow: 1px 2px 3px #111;
+}
+
+/* footer */
+
+footer{
+  width: 100%;
+  padding: 20px 0;
+  background: #4a4a4a;
+}
+
+footer .des,footer .category,footer .links, footer .contact {
+  padding: 5px;
+  /* display: flex; */
+  flex: 1 1 20%;
+  background-color: #4a4a4a;
+}
+
+footer .des .logo{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--green);
+  font-weight: bold;
+}
+
+footer .des p{
+  color: #fff;
+  padding: 10px 0;
+}
+footer .des .social .fab{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  width: 2rem;height: 2rem;background: var(--green);
+  color: #fff;
+  text-align: center;
+
+  border-radius:50%;
+}
+footer h2{
+  color: #fff;
+  text-transform: capitalize;
+}
+
+footer li{
+  color: #eee;
+  list-style: none;
+  padding: 5px 0;
+  text-transform: capitalize;
+  transition: .3s;
+}
+footer li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: green;
+}
+footer .contact li:hover{
+  text-decoration: none;
+  /* color: blue; */
+}
+footer .contact li span{
+  font-weight: 700;
+  font-size: 1rem;
+}
+footer  .copy{
+  width: 100%;
+  padding: 10px 0;
+  text-transform: capitalize;
+  text-align: center;
+  color: #eee;
+}
+footer  .copy span{
+  color: var(--green);
+  font-weight: 600;
+}
+footer  .copy hr{
+  margin-bottom: 15px;
 }
