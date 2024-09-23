@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playwrite DE Grund";
+  box-sizing: border-box; /*it helps when you add margin and padding it will be include them in the width specified of the element*/
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 3em /*em is used to set font size relative to the parent*/;
+  color: #1d2b53;
+}
+
+.logo span {
+  color: #ff004d;
+}
+
+.navigation {
+  margin-left: -300px;
+}
+
+.navigation a {
+  font-size: 1.2em;
+  color: #1d2b53;
+  text-decoration: none;
+  margin-right: 40px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  color: #ff004d;
+}
+
+.btn-talk {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: #ff004d;
+  border-radius: 15px;
+  border: 2px solid #ff004d;
+  font-weight: bolder;
+  transition: 0.2s;
+  margin-right: -80px;
+}
+
+.btn-talk:hover {
+  background-color: transparent; /*removes background transparent*/
+  color: #ff004d;
+  scale: 1.05;
+}
+
+/* Home */
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(./future-me.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.content {
+  max-width: 500px;
+  color: #1d2b53;
+}
+
+.content h2 {
+  font-size: 2.6em;
+}
+
+.content h2 span {
+  color: #ff004d;
+}
+
+.content h4 {
+  font-size: 1.7em;
+}
+
+.content p {
+  padding: 10px 0 40px 0;
+}
+
+.btn-group a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: #ff004d;
+  border-radius: 10px;
+  border: 2px solid #ff004d;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.btn-group a:nth-child(2) {
+  background-color: transparent;
+  color: #ff004d;
+}
+
+.btn-group a:nth-child(1):hover {
+  background-color: transparent;
+  color: #ff004d;
+  scale: 1.02;
+}
+
+.btn-group a:nth-child(2):hover {
+  background-color: #ff004d;
+  color: #fff;
+  scale: 1.02;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 50px;
+}
+
+.social-media a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #ff004d;
+  border-radius: 50%;
+  margin-right: 22px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #fff;
+  outline: 2px solid #ff004d;
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  transform: translateY(-5px);
+}
+
+.social-media a i {
+  color: #fff;
+}
