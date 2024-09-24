@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+
+    <!-- 
+    arthematic operator
+    assignment operator
+    inequality operator
+    -->
+
+    <script>
+        var x = 2, y = 5;
+        var ans = x + y;
+        document.write("<h1>Arthmetic operator</h1><br>Addition: " + ans);
+        document.write("<br>Subtraction: " + (x - y));
+        document.write("<br>Multiplication: " + (x * y));
+        document.write("<br>Division: " + (x / y));
+        document.write("<br>Remainder: " + (x % y));
+
+        //above are all the basic arthermatic operators
+
+
+
+        //assignment operator
+
+        var a = 10;
+        document.write("<br><br><h1>Assignment operator</h1><br>The value of 10 is now:", a += 3) //this mean += adds the value and assigns it to the given variable
+
+        // similarly -=, *=,/=
+
+        document.write("<br> The value of 10 is now:", a *= 10)
+
+        document.write("<br> Now value of 10 is: ", a)
+
+
+        //ineqality operator
+        var d = 22;
+        document.write("<h1>Inequality operator</h1><br> When checking only value == is used: ", d == 22)
+        document.write("<br>== dosen't consider datatype:", d == "22")
+        document.write("<br>=== considers value and datatype: ", d === "22")
+        document.write("<br> not equal to only value check <br>")
+        document.write(x != "3")  //3!=20
+
+        document.write("<br> not equal to with datatype check as well <br>")
+        document.write(x !== "3")  //3!=20
+
+
+        document.write("<br> grater than <br>")
+        document.write(x > 5)  //3>5
+
+
+        document.write("<br> less than <br>")
+        document.write(x < 5)  //3<5
+        //similarly ther are <= (greater then equal too), >= (less then equal to)
+
+
+    </script>
+</body>
+
+</html>
