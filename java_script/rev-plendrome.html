@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(number) {
+            // Store the original number to compare later
+            let originalNumber = number;
+            let reversedNumber = 0;
+
+            // Reverse the number using mathematical operations
+            while (number > 0) {
+                let lastDigit = number % 10; // Get the last digit
+                reversedNumber = reversedNumber * 10 + lastDigit; // Build the reversed number
+                number = Math.floor(number / 10); // Remove the last digit
+            }
+
+            // Check if the original number is equal to the reversed number
+            if (originalNumber === reversedNumber) {
+                return `${originalNumber} is a palindrome.`;
+            } else {
+                return `${originalNumber} is not a palindrome.`;
+            }
+        }
+
+        // Example usage:
+        let num = 123321;
+        console.log(isPalindrome(num)); // Output: 12321 is a palindrome.
+
+    </script>
+</body>
+
+</html>
