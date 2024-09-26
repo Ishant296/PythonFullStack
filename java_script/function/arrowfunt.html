@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        var x = () => {
+            document.write("Arrow function is this <br>")
+        }
+
+        var y = () => {
+            return 123;
+        }
+
+        var a = (name) => {
+            document.write("<br> My name is " + name + "<br>")
+        }
+
+        var b = (name) => {
+            return ("My name is " + name + "<br>")
+        }
+
+        x();
+        document.write(y());
+        a("Aditya")
+        document.write(b("Laajo"))
+    </script>
+</body>
+
+</html>

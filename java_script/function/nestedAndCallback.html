@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback and Nested</title>
+</head>
+
+<body>
+
+    <script>
+        //Nested
+        function two() {
+            document.write("This is two");
+        }
+
+        function one() {
+            document.write("This is one <br>");
+            two();
+        }
+
+        one();
+
+
+        //Callback function
+        function oden(callback) {
+            document.write("<br><br>first function call <br>");
+            callback();
+
+
+        }
+
+        function callback() {
+            document.write("secound function call <br>");
+        }
+
+        oden(callback);
+
+
+        //funciton as a paraameter
+        function show() {
+            document.write("<br>show function")
+        }
+
+        function disp(x, show) {
+            document.write("<br>display function..." + x)
+            show();   //callback function
+
+        }
+
+        disp(22, show);
+
+
+    </script>
+
+</body>
+
+</html>

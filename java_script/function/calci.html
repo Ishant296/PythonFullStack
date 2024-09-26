@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplecalculation</title>
+</head>
+
+<body>
+
+    <script>
+        //here we will see how you can re use function and why parameter functions have a advantage in dynamicity
+
+        function add() {
+            document.write(3 + 5);
+        }
+
+        function sub(a, b) {
+            return (a - b);
+        }
+
+        function multi(a, b) {
+            return (a * b);
+        }
+        function divide() {
+            document.write(25 / 5);
+        }
+
+        divide();
+        document.write("<br>" + sub(8, 4));
+        document.write("<br>" + multi(8, 4));
+        document.write("<br>" + multi(4, 4) + "<br>");
+        add();
+
+        //from above it is clear that parmater funcitons are more dynamic, and
+        //funcitons can be called multiple times
+    </script>
+</body>
+
+</html>

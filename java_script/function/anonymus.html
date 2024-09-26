@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymus funciton default</title>
+</head>
+
+<body>
+
+    <script>
+        //default anoymus 
+        var x = function () {
+            document.write("anonymus funcition without return <br>")
+        }
+
+        var y = function () {
+            return ("anonymus function with return <br>")
+        }
+
+        //parameter anonymus
+        var a = function (name) {
+            document.write("anonymus funcition without return " + name + "<br>")
+        }
+
+        var b = function (name) {
+            return ("anonymus function with return " + name + "<br>")
+        }
+
+
+        x();
+        document.write(y());
+        a("Adiya");
+        document.write(b("Aditya"))
+
+
+    </script>
+</body>
+
+</html>
