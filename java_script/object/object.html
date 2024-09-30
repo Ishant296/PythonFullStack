@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object creation</title>
+</head>
+
+<body>
+    <script>
+        //first way of declaring object
+        var empl = {
+            id: 11,
+            name: "Aditya",
+            salary: 12121212
+        }
+
+        document.write(empl.id + " " + empl.name + " " + empl.salary);
+
+
+        //secound way to declare object (here "=" is used rather then ":")
+        var stud = new Object();
+
+        stud.id = 12;
+        stud.name = "Sagar";
+        stud.salary = 12121212;
+        document.write("<br>" + stud.id + " " + stud.name + " " + stud.salary);
+
+        
+        
+        //third way to declare object using constructor function
+
+        function emp(){
+            this.id = 125;
+            this.name="Aditya";
+            this.designation="Business Expert";
+        }
+
+        e1 = new emp(); //object
+        document.write("<br>"+ e1.id + " "+e1.name+" "+e1.designation+" ")
+
+    </script>
+</body>
+
+</html>

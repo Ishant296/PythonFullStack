@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic constructor Function</title>
+</head>
+
+<body>
+    <script>
+        function emp(id, name, designation) {
+            this.id = id;
+            this.name = name;
+            this.designation = designation;
+        }
+
+        employee = new emp(123, "Aditya", "Developer");
+        document.write("<br>" + employee.id + " " + employee.name + " " + employee.designation + " ")
+
+    </script>
+</body>
+
+</html>
