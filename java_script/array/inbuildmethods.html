@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods related to array</title>
+</head>
+
+<body>
+
+    <script>
+        //length
+        var a1 = [11, 22, 33];
+        document.write("Length of a1 : " + a1.length);
+        //toString
+        let n1 = ["Adi", "Ishu", "Sid"];
+        document.write("<br> toString: " + n1.toString())
+
+        //at() this method will tell what is the value at a given index
+        document.write("<br> at:" + n1.at(1))
+
+        //join() helps to use any separator
+        document.write("<br> join: " + n1.join("_"))
+
+        //Poping(remove) data  out of the array and pushing(new element) teh data into array
+
+        let n2 = ["meena", "heena", "teena", "reena"];
+        n2.push("sujata");
+
+        document.write("<br> after push : " + n2);
+
+        n2.pop();
+        document.write("<br> after pop : " + n2);
+        n2.pop();
+        document.write("<br> after pop : " + n2);
+
+        document.write("<br> after pop : " + n2.pop());
+
+        //shift()  method removes the first array element and shift the all other e
+        //elements to lower index
+
+        var n3 = ["meena", "heena", "teena", "reena"];
+        document.write("<br>  : " + n2);
+        n3.shift();
+        document.write("<br> after shift : " + n2);
+        document.write("<br> after shift : " + n2.shift());
+
+        //unshift() method adds new element to an array at begining and unshift older elements
+
+        var n4 = ["meena", "heena", "teena", "reena"];
+        document.write("<br>  arrr : " + n2);
+        n4.unshift("snjay")
+        document.write("<br> after Unshift : " + n2);
+
+        n4[2] = "mayur";
+        document.write("<br> after  : " + n4);
+
+
+    </script>
+</body>
+
+</html>
