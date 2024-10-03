@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Type Methods</title>
+</head>
+
+<body>
+    <script>
+        //indexof()
+        var a1 = ["aa", "bb", "cc", "dd"]
+
+        document.write("<br>  index of  :" + a1.indexOf("cc"));
+
+        //   lastindexof()
+        var a1 = ["aa", "bb", "cc", "dd", "cc", "pp"];
+
+        document.write("<br>  index of  :" + a1.lastIndexOf("cc"));
+
+        // /include()
+
+        var a1 = ["aa", "bb", "cc", "dd", "cc", "pp"];
+
+        document.write("<br>  index of  :" + a1.includes("bbs"));
+
+        //find()
+
+        var a1 = [23, 1, 44, 7, 98, 34, 56];
+
+        var x = a1.find((i) => {
+
+            return i % 2 == 0;
+
+        })
+
+        document.write("<br> first even number  :  " + x)
+
+        //findIndex()
+
+        var a1 = [23, 1, 44, 7, 98, 34, 56];
+
+        var x = a1.findIndex((i) => {
+
+            return i % 2 == 0;
+
+        })
+
+        document.write("<br> index of fisrt even number :  " + x)
+
+        //findLast()
+
+        var a1 = [23, 1, 44, 7, 98, 34, 56];
+
+        var x = a1.findLast((i) => {
+
+            return i % 2 == 0;
+
+        })
+
+        document.write("<br> last even number  :  " + x)
+
+
+        //findLastIndex()
+
+        var a1 = [23, 1, 44, 7, 98, 34, 56];
+
+        var x = a1.findLastIndex((i) => {
+
+            return i % 2 == 0;
+
+        })
+
+        document.write("<br> last even number  :  " + x)
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
