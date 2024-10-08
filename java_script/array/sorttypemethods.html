@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort type methods</title>
+</head>
+
+<body>
+    <script>
+        var a = ['aa', 'bb', 'dd', 'ff', 'ee', 'cc'];
+
+        //sort(): Sorts the existing array in ascending order
+        document.write("Before sort: " + a);
+        document.write("<br>After sort: " + a.sort());
+        document.write("<br>Current condition of array: " + a);
+
+        //reverse():  Reverses the existing array
+        var a = ['aa', 'bb', 'dd', 'ff', 'ee', 'cc'];
+        document.write("<br><br>Before sort: " + a);
+        document.write("<br>After sort: " + a.reverse());
+        document.write("<br>Current condition of array: " + a);
+
+        //toSorted(): Sorts by creating a new array
+        var a = ['aa', 'bb', 'dd', 'ff', 'ee', 'cc'];
+        document.write("<br><br>Before sort: " + a);
+        document.write("<br>After sort: " + a.toSorted());
+        document.write("<br>Current condition of array: " + a);
+
+        //toReverseded(): Sorts by creating a new array
+        var a = ['aa', 'bb', 'dd', 'ff', 'ee', 'cc'];
+        document.write("<br><br>Before sort: " + a);
+        document.write("<br>After sort: " + a.toReversed());
+        document.write("<br>Current condition of array: " + a);
+
+        //To create decending order
+        var a = ['aa', 'bb', 'dd', 'ff', 'ee', 'cc'];
+        document.write("<br><br>Before sort: " + a);
+        document.write("<br>Decending order: " + a.sort().reverse())
+
+        //Number sorting using call back function
+        var num = [1, 5, 9, 8, 15];
+
+        var ans = num.sort(show);
+        function show(a, b) {
+            return a - b
+        }
+
+        document.write("<br><br>" + ans)
+
+        //The short hand using arrow function
+        var answer = num.sort((a, b) => {
+            return a - b;
+        })
+        document.write("<br><br>" + answer)
+
+        //The short hand using arrow function for decending order
+        var answer = num.sort((a, b) => {
+            return b - a;
+        })
+        document.write("<br><br>" + answer)
+
+    </script>
+</body>
+
+</html>

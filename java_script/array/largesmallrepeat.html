@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest smallest repeat</title>
+</head>
+
+<body>
+    <script>
+        var array = [5, 2, 8, 7, 6];
+        var large = array.sort((a, b) => {
+            return b - a
+        });
+
+
+        var array = [5, 2, 8, 7, 6];
+        var small = array.sort((a, b) => {
+            return a - b
+        });
+
+
+        var array = [5, 2, 2, 8, 7, 6, 1, 1];
+
+        // Now, find repeated numbers
+        var repeatedNumbers = [];
+        for (let i = 0; i < array.length - 1; i++) {
+            if (array[i] === array[i + 1] && !repeatedNumbers.includes(array[i])) {
+                repeatedNumbers.push(array[i]);
+            }
+        }
+
+        if (repeatedNumbers.length > 0) {
+            console.log("Repeated numbers:", repeatedNumbers);
+        } else {
+            console.log("No repeated numbers");
+        }
+
+
+        document.write("<br><br>" + large[0]);
+        document.write("<br><br>" + small[0]);
+        document.write("<br><br>" + repeatedNumbers)
+
+    </script>
+</body>
+
+</html>

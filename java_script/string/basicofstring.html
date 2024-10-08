@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of string and related methods</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        var s1 = "welcome"
+        document.write(s1)
+
+        var s2 = new String("lllll");
+        document.write(s2)
+
+        //length
+        document.write("<br> length  :  " + s1.length)
+
+
+        var s3 = 2 + 2 + "sss" + 9;
+
+        document.write("<br>" + s3)//everthing before sting will have it's own data type and after it will change to sting
+
+
+        //    charAt()
+        var s = "meena";
+        document.write("<br> char AT  :" + s.charAt(2))
+
+        var s = "meena";
+        document.write("<br> index of :" + s.indexOf('e'))
+        document.write("<br> index of :" + s.lastIndexOf('e'))
+
+
+
+        //uppercase  //lowercase
+
+
+        var s = "meena";
+        document.write("<br> uppercase  :" + s.toUpperCase())
+
+        var s = "AAAAA"
+
+        document.write("<br> lowercase  :" + s.toLowerCase())
+
+
+        //conact
+
+        var a1 = "seven"
+
+        a1 = a1.concat(" ")
+        a1 = a1.concat("mentore")
+
+
+        document.write("<br> conact  :" + a1)
+
+
+        //trim 
+        var x = "  welcome to class  ";
+
+        document.write("<br>   length before trim " + x.length)
+
+
+        document.write("<br>   length After trim " + x.trim().length)
+
+        document.write("<br>   length After trim " + x.trimStart().length)
+        document.write("<br>   length After trim " + x.trimEnd().length)
+
+        //slice
+        var y = "Welcome to my dimision."
+
+        document.write("<br><br> positive slice: " + y.slice(2, 6))
+
+        document.write("<br> negative slice: " + y.slice(-6, -2))
+
+        document.write("<br> substring: " + y.substring(2, 6))//doesn't work with values less then 0(i.e negative idex)
+
+        document.write("<br> substr: " + y.substr(3, 7)) //here the second value tell the number of character which should be shown
+
+
+
+        var s1 = "hey welcoem to my class";
+
+
+        document.write("<br><br>" + s1.startsWith("hey") + "<br>")//checks if the string starts with
+        document.write(s1.endsWith("hey") + "<br>")//checks if the string ends with
+        document.write(s1.includes("hey") + "<br>")//checks if the string includes
+
+        //split
+
+        var x = s1.split(" ");
+        document.write(x + "<br>")
+
+        x.forEach((i) => {
+            document.write(i + "<br>")
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
