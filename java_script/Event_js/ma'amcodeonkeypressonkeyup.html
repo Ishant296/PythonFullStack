@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" id="num" name="num1" onkeypress="getsquare()" onkeyup="show()" placeholder="enter number">
+        <br><br>
+        <input type="button" value="sqaure">
+
+
+    </form>
+
+    <h1 id="d1"></h1>
+
+    <script>
+        function getsquare() {
+
+            document.getElementById("num").style.background = "blue"
+            var x = document.getElementById("num").value;
+
+            // document.getElementById("d1").innerHTML=x;
+
+            console.log(x)
+
+        }
+
+        function show() {
+
+            document.getElementById("num").style.background = "red"
+        }
+
+
+    </script>
+
+</body>
+
+</html>

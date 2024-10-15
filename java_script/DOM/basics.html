@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h1 id="header"></h1>
+    <button onclick="add()">Click</button>
+
+    <form action="" name="form1">
+        <input type="text" name="name" placeholder="Enter name">
+        <br><br>
+        <input type="submit" onclick="show()">
+    </form>
+
+    <form action="" name="form2">
+        <input type="text" name="number" id="num" placeholder="Enter the number:">
+        <br><br>
+        <input type="submit" onclick="square()">
+    </form>
+
+    <h3 id="number"></h3>
+
+
+
+    <script>
+        x = document.getElementById("header");
+        function add() {
+            x.innerHTML = "Welcome to my website"
+            x.style.background = "red";//That's how you apply style using dom
+            x.style.color = "white"
+        }
+
+        function show() {
+            var name = document.form1.name.value;
+            alert(name);
+        }
+
+        function square() {
+            var num = document.getElementById("num").value;
+            document.getElementById("number").innerHTML = "Square:- " + (num * num);
+            alert(num * num);
+        }
+
+
+    </script>
+
+    <!-- 
+    DOM allows us to create, change or remove elements from the document. We can also add events to these elements to make our page more dynamic. 
+    
+    Some of the dom Methods are:
+  document.getElementById(id)
+  document.getElementByTagName(name)
+  document.getElementByClassName(class)
+ -->
+</body>
+
+</html>

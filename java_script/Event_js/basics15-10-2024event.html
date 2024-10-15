@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event basics</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="square" onmouseover="show()" onmouseleave="leave()"></div>
+    <br>
+    <button onclick="colorChange()" ondblclick="doubleClickColor()">Change color</button>
+    <br><br>
+    <div id="square1" onmouseup="up()" onmousedown="down()"></div>
+    <br><br>
+    <div id="square2" onmousemove="move()" onmouseout="out()"></div>
+    <!-- mouse up is effective when you hold a click, and when you leave the click mousedown works -->
+
+    <script>
+        function colorChange() {
+            document.getElementById("square").style.background = "blue"
+        }
+
+        function doubleClickColor() {
+            document.getElementById("square").style.background = "red"
+        }
+
+        function show() {
+            document.getElementById("square").style.background = "violet";
+        }
+
+        function leave() {
+            document.getElementById("square").style.background = "green";
+        }
+
+        function up() {
+            document.getElementById("square1").style.background = "crimson";
+        }
+
+        function down() {
+            document.getElementById("square1").style.background = "black";
+        }
+
+        function move() {
+            document.getElementById("square2").style.background = "blue";
+        }
+
+        function out() {
+            document.getElementById("square2").style.background = "red";
+        }
+
+    </script>
+
+</body>
+
+</html>

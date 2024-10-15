@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" id="num" name="num1" placeholder="enter number"> <br><br>
+        <input type="button" value="sqaure" onclick="getsquare()">
+
+
+    </form>
+
+    <h1 id="d2"></h1>
+
+    <form action="">
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="sss" value="female">Female
+        <br><br>
+        <input type="button" value="submit" onclick="total()">
+    </form>
+
+    <script>
+        function getsquare() {
+            var number = document.getElementById("num").value;
+
+            console.log(number * number);
+            //    document.write(number*number)
+            //    alert(number*number)    
+            document.getElementById("d2").innerHTML = "Sqaure :- " + (number * number)
+        }
+
+        function total() {
+            //    var x =document.getElementsByName("gender");
+            //    alert(x.length)
+            var x = document.getElementsByName("gender");
+            alert(x.length)
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
