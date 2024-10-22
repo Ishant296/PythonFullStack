@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener2</title>
+</head>
+
+<body>
+    <h1>Welcome to my class</h1>
+    <h2 id="d1"></h2>
+    <button id="btn">Click here</button>
+
+
+    <script>
+        let a1 = 3, a2 = 4;
+
+        document.getElementById("btn").addEventListener("click", function () {
+            show(a1, a2);
+        });
+
+        function show(a1, a2) {
+            document.getElementById("d1").innerHTML = a1 * a2
+        }
+    </script>
+</body>
+
+</html>

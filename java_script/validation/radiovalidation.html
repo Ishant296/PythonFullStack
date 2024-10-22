@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Validation</title>
+</head>
+
+<body>
+
+    <input type="radio" id="summer" value="summer"> Summer <br>
+    <input type="radio" id="winter" value="winter"> Winter <br>
+    <input type="radio" id="rainy" value="rainy"> Rainy <br><br>
+
+    <button type="button" onclick="radioCheck()">Click Me</button><br>
+    <h2 id="disp" style="color: green;"></h2><br>
+    <h2 id="error" style="color: crimson;"></h2><br>
+
+    <script>
+        function radioCheck() {
+            if (document.getElementById("summer").checked) {
+                document.getElementById("disp").innerHTML = document.getElementById("summer").value + " radio button checked"
+            } else
+                if (document.getElementById("winter").checked) {
+                    document.getElementById("disp").innerHTML = document.getElementById("winter").value + " radio button checked"
+                } else
+                    if (document.getElementById("rainy").checked) {
+                        document.getElementById("disp").innerHTML = document.getElementById("rainy").value + " radio button checked"
+                    } else {
+                        document.getElementById("error").innerHTML = " You have not selected any radio button!!"
+                    }
+        }
+    </script>
+
+</body>
+
+</html>

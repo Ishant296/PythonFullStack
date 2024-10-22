@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" name="myform" onsubmit="return validation()">
+
+        <input type="text" name="num" placeholder="enter number">
+        <span id="numloc"></span>
+        <br><br>
+
+
+        <input type="submit">
+
+    </form>
+
+
+    <script>
+
+        function validation() {
+
+            var num = document.myform.num.value;
+
+
+            if (isNaN(num)) {
+                // alert("enter numeric value only")
+                document.getElementById("numloc").innerHTML = "enter the numeric value only"
+
+                // alert("enter numeric value only")
+                document.getElementById("numloc").style.color = "red";
+                return false;
+            } else {
+                return false;
+            }
+
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

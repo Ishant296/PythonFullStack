@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+
+<body>
+    <form action="" name="myform" onsubmit="validation()">
+        <input type="text" name="username" placeholder="Please enter username"><br><br>
+        <input type="password" name="pass" placeholder="Please enter password"><br><br>
+        <input type="password" name="repass" placeholder="Please re-enter password"><br><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function validation() {
+
+            var name = document.myform.username.value;
+            var pass = document.myform.pass.value;
+            var repass = document.myform.repass.value;
+
+            if (name == null || name == "") {
+
+                alert("Username kon tera baap dale ga!!")
+            } else
+                if (pass.length < 8) {
+                    alert("Password lumba kar !!")
+                } else
+                    if (pass == repass) {
+                        return true;
+                    } else {
+                        alert("Bay password same hona, chu****")
+                    }
+        }
+    </script>
+
+</body>
+
+</html>

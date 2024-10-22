@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeEventListner</title>
+    <style>
+        div {
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <p>Hover on me and a name shall rise...</p>
+        <button onclick="remove()">Click Me</button>
+    </div>
+    <h2 id="d2"></h2>
+
+    <script>
+        const y = document.getElementById("d1");
+        y.addEventListener("mouseover", show);
+
+        function show() {
+            document.getElementById("d2").innerHTML += "<br>I am Optimus Prime..."
+        }
+
+        function remove() {
+            y.removeEventListener("mouseover", show);
+            document.getElementById("d2").innerHTML += "<br>I am Megatron"
+        }
+    </script>
+
+</body>
+
+</html>

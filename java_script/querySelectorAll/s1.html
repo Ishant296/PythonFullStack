@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+</head>
+
+<body>
+    <a href="#" target="_self">Home</a>
+    <br><br>
+    <a href="#" target="_blank">About us</a>
+    <h2>o index</h2>
+    <h2>1 index</h2>
+
+
+    <script>
+        var nodelist = document.querySelectorAll("h2");
+        var nodelist1 = document.querySelectorAll("a[target]");
+        //  nodelist[0].style.color="red";
+        //  nodelist[1].style.color="red";
+        //.querySelectorAll makes an array of all the selected elements which can then be selected using index
+
+
+        for (i = 0; i < nodelist.length; i++) {
+            nodelist[i].style.color = "red";
+
+        }
+
+        for (i = 0; i < nodelist1.length; i++) {
+            nodelist1[i].style.textDecoration = "none";
+
+        }
+    </script>
+</body>
+
+</html>

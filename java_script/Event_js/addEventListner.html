@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Welcome to my class</h1>
+    <h2 id="d1"></h2>
+    <button id="btn">Click here</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", show);
+        document.getElementById("btn").addEventListener("dblclick", disp);
+        document.getElementById("btn").addEventListener("mouseover", change);
+        document.getElementById("btn").addEventListener("mouseleave", change2)
+
+
+        function show() {
+            document.getElementById("d1").innerHTML = Date();
+        }
+
+        function disp() {
+            alert("Welcome.....")
+        }
+
+        function change() {
+            document.getElementById("btn").style.background = "blue";
+            document.getElementById("btn").style.color = "white";
+            document.getElementById("btn").style.padding = "10px"
+
+        }
+
+        function change2() {
+            document.getElementById("btn").style.background = "red";
+            document.getElementById("btn").style.color = "white";
+            document.getElementById("btn").style.padding = "10px"
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+addEventListener () method attache an event handler to specified  element
+
+the addEventListener() method method attache an event handler to specified  element
+without overwriting exsiting event handler
+
+you can addd many event handler to one elemnt
+you can add event listner to any DOM object not only html i.e without object
+
+
+
+-->

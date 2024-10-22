@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributeSelector</title>
+</head>
+
+<body>
+    <a href="#" target="_self">Home</a>
+    <br><br>
+    <a href="#" target="_blank">About Us</a>
+
+    <script>
+        document.querySelector("a[target]").style.textDecoration="none";
+        document.querySelector("a[target='_blank']").style.textDecoration="none"
+    </script>
+</body>
+
+</html>
