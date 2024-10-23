@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            constructor() {
+                //all var will be a private data member as they can't be used directly
+                var name;
+                var id;
+            }
+
+            //Now to use these private data member you need to do the following steps
+            setId(id) {
+                this.id = id;
+            }
+
+            getId() {
+                return this.id;
+            }
+
+            setName(name) {
+                this.name = name;
+            }
+
+            getName() {
+                return this.name
+            }
+        }
+
+        let e1 = new Employee();
+
+        e1.setId(222);
+        e1.setName("Adi");
+        document.write(e1.getId() + " " + e1.getName())
+    </script>
+</body>
+
+</html>

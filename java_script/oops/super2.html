@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super 2</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(name) {
+                document.write("<br>This is person constructor<br>                  ");
+                this.name = name
+            }
+        }
+
+        class Employee extends Person {
+            constructor(name, designation) {
+                super(name);
+                this.designation = designation;
+            }
+
+            disp() {
+                document.write(this.name + " " + this.designation + " <br>")
+            }
+        }
+
+        let e1 = new Employee("Aditya", "Developer");
+        document.write(e1.name + " " + e1.designation + "<br>");
+
+        let e2 = new Employee("Heena", "Manager");
+        document.write(e2.name + " " + e2.designation + "<br>");
+
+        e1.disp();
+        e2.disp();
+    </script>
+</body>
+
+</html>

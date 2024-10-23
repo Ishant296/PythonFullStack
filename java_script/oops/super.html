@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor() {
+                document.write("<br>parent class constructor call");
+                this.name = "Aditya";
+            }
+
+            show() {
+                document.write("<br>show perosn details")
+            }
+        }
+
+        class Employee extends Person {
+            constructor() {
+                super();//parent class constructor call here
+                document.write("<br>cild class constructor call")
+            }
+
+            disp() {
+                document.write("<br>display employee details: " + this.name);
+            }
+        }
+
+        let e1 = new Employee();
+        e1.show();
+        e1.disp();
+        //this. is a current class instances
+    </script>
+</body>
+
+</html>
