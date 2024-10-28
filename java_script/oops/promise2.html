@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise with .then and .catch</title>
+</head>
+
+<body>
+    <script>
+
+        let x = 15, y = 15
+        let object = new Promise((respond, reject) => {
+            if (x == y) {
+                respond("responded");
+            }
+            else {
+                reject("reject");
+            }
+        });
+
+        object.then((a) => {
+            document.write("Promise has been " + a);
+        })
+
+        object.catch((b) => {
+            document.write("Promise has been " + b);
+        })
+    </script>
+</body>
+
+</html>

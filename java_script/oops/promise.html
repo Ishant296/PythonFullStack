@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+        let object = new Promise((respond, reject) => {
+            let x = 0;
+            if (x == 0) {
+                respond("This promise is complete.");
+            }
+            else {
+                reject("This promise is rejected.");
+            }
+        });
+
+        object.then((x) => {
+            document.write(x);
+        },
+
+            (y) => {
+                document.write(y);
+            }
+        )
+    </script>
+</body>
+
+</html>
