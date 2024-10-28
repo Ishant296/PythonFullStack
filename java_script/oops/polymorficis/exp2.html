@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorficis2</title>
+</head>
+
+<body>
+    <script>
+        function A() {
+            document.write("A is invoke")
+        }
+
+        A.prototype.disp = function () {
+            return "<br>;"
+        }
+
+        function B() {
+            document.write("<br> B is invoke")
+        }
+
+        B.prototype = Object.create(A.prototype);
+
+        var a = [new A(), new B()];
+
+        a.forEach(function (d1) {
+            document.write(d1.disp())
+        })
+    </script>
+
+</body>
+
+</html>

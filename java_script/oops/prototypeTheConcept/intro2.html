@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype2</title>
+</head>
+
+<body>
+    <script>
+        function Employee(fname, lname) {
+            this.fname = fname;
+            this.lname = lname;
+        }
+
+        Employee.prototype.companyName = "A-Company";
+        Employee.prototype.fullName = function () {
+            document.write("<br>" + this.fname + " " + this.lname + " " + this.companyName);
+        }
+
+        var e1 = new Employee("meena", "roy");
+        e1.fullName();
+
+
+    </script>
+</body>
+
+</html>
