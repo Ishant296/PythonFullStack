@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHideToggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <button id="Hide">Hide</button>
+    <button id="Show">Show</button>
+    <button id="Toggle">Toggle</button>
+
+    <h1>Welcome to my world</h1>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#Hide").click(function () {
+                $("h1").hide();
+            });
+
+
+            $("#Show").click(function () {
+                $("h1").show();
+            });
+
+
+            $("#Toggle").click(function () {
+                $("h1").toggle();
+            });
+        })
+    </script>
+
+</body>
+
+</html>

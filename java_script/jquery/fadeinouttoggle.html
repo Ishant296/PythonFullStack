@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In Out Toggle</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            display: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">FadeOut</button>
+    <button id="fadetoggle">FadeToggle</button>
+
+    <div id="s1"></div>
+    <div id="s2"></div>
+    <div id="s3"></div>
+
+    <script>
+        $(document).ready(
+            function () {
+                $("#fadein").click(function () {
+                    $("#s1").fadeIn();
+                    $("#s2").fadeIn("slow");
+                    $("#s3").fadeIn(4000);
+                });
+
+
+                $("#fadeout").click(function () {
+                    $("#s1").fadeOut();
+                    $("#s2").fadeOut("slow");
+                    $("#s3").fadeOut(4000);
+                });
+
+
+                $("#fadetoggle").click(function () {
+                    $("#s1").fadeToggle();
+                    $("#s2").fadeToggle("slow");
+                    $("#s3").fadeToggle(4000);
+                });
+            }
+        );
+    </script>
+
+</body>
+
+</html>
