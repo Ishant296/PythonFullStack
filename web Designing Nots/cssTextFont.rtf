@@ -1,0 +1,660 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green255\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Text Color\par
+The color property is used to set the color of the text. The color is specified by:\par
+\par
+a color name - like "red"\par
+a HEX value - like "#ff0000"\par
+an RGB value - like "rgb(255,0,0)"\par
+Look at CSS Color Values for a complete list of possible color values.\par
+\par
+The default text color for a page is defined in the body selector.\par
+\par
+Example\par
+body \{\par
+  color: blue;\par
+\}\par
+\par
+h1 \{\par
+  color: green;\par
+\}\par
+\par
+\par
+--------------------\par
+Text Color and Background Color\par
+In this example, we define both the background-color property and the color property:\par
+\par
+Example\par
+body \{\par
+  background-color: lightgrey;\par
+  color: blue;\par
+\}\par
+\par
+h1 \{\par
+  background-color: black;\par
+  color: white;\par
+\}\par
+\par
+div \{\par
+  background-color: blue;\par
+  color: white;\par
+\}\par
+------------------------------------------------------------------------------\par
+\b CSS Text Alignment\par
+Text Alignment and Text Direction\par
+\b0 In this chapter you will learn about the following properties:\par
+\b\par
+text-align\par
+text-align-last\par
+direction\par
+unicode-bidi\par
+vertical-align\par
+Text Alignment\par
+\b0 The text-align property is used to set the horizontal alignment of a text.\par
+\par
+A text can be left or right aligned, centered, or justified.\par
+\par
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):\par
+\par
+Example\par
+h1 \{\par
+  text-align: center;\par
+\}\par
+\par
+h2 \{\par
+  text-align: left;\par
+\}\par
+\par
+h3 \{\par
+  text-align: right;\par
+\}\par
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):\par
+\par
+Example\par
+div \{\par
+  text-align: justify;\par
+\}\par
+\b Text Align Last\par
+\b0 The text-align-last property specifies how to align the last line of a text.\par
+\par
+Example\par
+Align the last line of text in three <p> elements:\par
+\par
+p.a \{\par
+  text-align-last: right;\par
+\}\par
+\par
+p.b \{\par
+  text-align-last: center;\par
+\}\par
+\par
+p.c \{\par
+  text-align-last: justify;\par
+\}\par
+Text Direction\par
+The direction and unicode-bidi properties can be used to change the text direction of an element:\par
+\par
+Example\par
+p \{\par
+  direction: rtl;\par
+  unicode-bidi: bidi-override;\par
+\}\par
+\b Vertical Alignment\par
+\b0 The vertical-align property sets the vertical alignment of an element.\par
+\par
+Example\par
+Set the vertical alignment of an image in a text: \par
+\par
+img.a \{\par
+  vertical-align: baseline;\par
+\}\par
+\par
+img.b \{\par
+  vertical-align: text-top;\par
+\}\par
+\par
+img.c \{\par
+  vertical-align: text-bottom;\par
+\}\par
+\par
+img.d \{\par
+  vertical-align: sub;\par
+\}\par
+\par
+img.e \{\par
+  vertical-align: super;\par
+\}\par
+\b The CSS Text Alignment/Direction Properties\par
+\b0 Property\tab    Description\par
+direction\tab    Specifies the text direction/writing direction\par
+text-align\tab    Specifies the horizontal alignment of text\par
+text-align-last\tab     Specifies how to align the last line of a text\par
+unicode-bidi\tab     Used together with the direction property to set or return whether the text       should be overridden to support multiple languages in the same document                          \par
+vertical-align\tab     Sets the vertical alignment of an element\par
+==============================================================================\par
+\b CSS Text Decoration\par
+Text Decoration\par
+\b0 In this chapter you will learn about the following properties:\par
+\par
+text-decoration-line\par
+text-decoration-color\par
+text-decoration-style\par
+text-decoration-thickness\par
+text-decoration\par
+Add a Decoration Line to Text\par
+The text-decoration-line property is used to add a decoration line to text.\par
+\par
+Tip: You can combine more than one value, like overline and underline to display lines both over and under a text.\par
+\par
+Example\par
+h1 \{\par
+  text-decoration-line: overline;\par
+\}\par
+\par
+h2 \{\par
+  text-decoration-line: line-through;\par
+\}\par
+\par
+h3 \{\par
+  text-decoration-line: underline;\par
+\}\par
+\par
+p \{\par
+  text-decoration-line: overline underline;\par
+\}\par
+Note: It is not recommended to underline text that is not a link, as this often confuses the reader.\par
+\par
+Specify a Color for the Decoration Line\par
+The text-decoration-color property is used to set the color of the decoration line.\par
+\par
+Example\par
+h1 \{\par
+  text-decoration-line: overline;\par
+  text-decoration-color: red;\par
+\}\par
+\par
+h2 \{\par
+  text-decoration-line: line-through;\par
+  text-decoration-color: blue;\par
+\}\par
+\par
+h3 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-color: green;\par
+\}\par
+\par
+p \{\par
+  text-decoration-line: overline underline;\par
+  text-decoration-color: purple;\par
+\}\par
+\par
+Specify a Style for the Decoration Line\par
+The text-decoration-style property is used to set the style of the decoration line.\par
+\par
+Example\par
+h1 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-style: solid;\par
+\}\par
+\par
+h2 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-style: double;\par
+\}\par
+\par
+h3 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-style: dotted;\par
+\}\par
+\par
+p.ex1 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-style: dashed;\par
+\}\par
+\par
+p.ex2 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-style: wavy;\par
+\}\par
+\par
+p.ex3 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-color: red;\par
+  text-decoration-style: wavy;\par
+\}\par
+Specify the Thickness for the Decoration Line\par
+The text-decoration-thickness property is used to set the thickness of the decoration line.\par
+\par
+Example\par
+h1 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-thickness: auto;\par
+\}\par
+\par
+h2 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-thickness: 5px;\par
+\}\par
+\par
+h3 \{\par
+  text-decoration-line: underline;\par
+  text-decoration-thickness: 25%;\par
+\}\par
+\par
+p \{\par
+  text-decoration-line: underline;\par
+  text-decoration-color: red;\par
+  text-decoration-style: double;\par
+  text-decoration-thickness: 5px;\par
+\}\par
+The Shorthand Property\par
+The text-decoration property is a shorthand property for:\par
+\par
+text-decoration-line (required)\par
+text-decoration-color (optional)\par
+text-decoration-style (optional)\par
+text-decoration-thickness (optional)\par
+Example\par
+h1 \{\par
+  text-decoration: underline;\par
+\}\par
+\par
+h2 \{\par
+  text-decoration: underline red;\par
+\}\par
+\par
+h3 \{\par
+  text-decoration: underline red double;\par
+\}\par
+\par
+p \{\par
+  text-decoration: underline red double 5px;\par
+\}\par
+A Small Tip\par
+All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links, like this:\par
+\par
+Example\par
+a \{\par
+  text-decoration: none;\par
+\}\par
+All CSS text-decoration Properties\par
+Property\tab Description\par
+text-decoration\tab Sets all the text-decoration properties in one declaration\par
+text-decoration-color\tab Specifies the color of the text-decoration\par
+text-decoration-line\tab Specifies the kind of text decoration to be used (underline, overline, etc.)\par
+text-decoration-style\tab Specifies the style of the text decoration (solid, dotted, etc.)\par
+text-decoration-thickness\tab Specifies the thickness of the text decoration line\par
+==================================================================================\par
+\b CSS Text Transformation\par
+Text Transformation\par
+\b0 The text-transform property is used to specify uppercase and lowercase letters in a text.\par
+\par
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:\par
+\par
+Example\par
+p.uppercase \{\par
+  text-transform: uppercase;\par
+\}\par
+\par
+p.lowercase \{\par
+  text-transform: lowercase;\par
+\}\par
+\par
+p.capitalize \{\par
+  text-transform: capitalize;\par
+\}\par
+The CSS Text Transformation Property\par
+Property\tab Description\par
+text-transform\tab Controls the capitalization of text\par
+==============================================================\par
+\b CSS Text Spacing\par
+Text Spacing\par
+\b0 In this chapter you will learn about the following properties:\par
+\par
+text-indent\par
+letter-spacing\par
+line-height\par
+word-spacing\par
+white-space\par
+Text Indentation\par
+The text-indent property is used to specify the indentation of the first line of a text:\par
+\par
+Example\par
+p \{\par
+  text-indent: 50px;\par
+\}\par
+Letter Spacing\par
+The letter-spacing property is used to specify the space between the characters in a text.\par
+\par
+The following example demonstrates how to increase or decrease the space between characters:\par
+\par
+Example\par
+h1 \{\par
+  letter-spacing: 5px;\par
+\}\par
+\par
+h2 \{\par
+  letter-spacing: -2px;\par
+\}\par
+Line Height\par
+The line-height property is used to specify the space between lines:\par
+\par
+Example\par
+p.small \{\par
+  line-height: 0.8;\par
+\}\par
+\par
+p.big \{\par
+  line-height: 1.8;\par
+\}\par
+\par
+Word Spacing\par
+The word-spacing property is used to specify the space between the words in a text.\par
+\par
+The following example demonstrates how to increase or decrease the space between words:\par
+\par
+Example\par
+p.one \{\par
+  word-spacing: 10px;\par
+\}\par
+\par
+p.two \{\par
+  word-spacing: -2px;\par
+\}\par
+White Space\par
+The white-space property specifies how white-space inside an element is handled.\par
+\par
+This example demonstrates how to disable text wrapping inside an element:\par
+\par
+Example\par
+p \{\par
+  white-space: nowrap;\par
+\}\par
+The CSS Text Spacing Properties\par
+Property\tab Description\par
+letter-spacing\tab Specifies the space between characters in a text\par
+line-height\tab Specifies the line height\par
+text-indent\tab Specifies the indentation of the first line in a text-block\par
+white-space\tab Specifies how to handle white-space inside an element\par
+word-spacing\tab Specifies the space between words in a text\par
+==================================================================================\par
+\b CSS Text Shadow\par
+Text Shadow\par
+\b0 The text-shadow property adds shadow to text.\par
+\par
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):\par
+\par
+Text shadow effect!\par
+Example\par
+h1 \{\par
+  text-shadow: 2px 2px;\par
+\}\par
+Next, add a color (red) to the shadow:\par
+\par
+Text shadow effect!\par
+Example\par
+h1 \{\par
+  text-shadow: 2px 2px red;\par
+\}\par
+Then, add a blur effect (5px) to the shadow:\par
+\par
+Text shadow effect!\par
+Example\par
+h1 \{\par
+  text-shadow: 2px 2px 5px red;\par
+\}\par
+More Text Shadow Examples\par
+Example 1\par
+Text-shadow on a white text:\par
+\par
+h1 \{\par
+  color: white;\par
+  text-shadow: 2px 2px 4px #000000;\par
+\}\par
+Example 2\par
+Text-shadow with red neon glow:\par
+\par
+h1 \{\par
+  text-shadow: 0 0 3px #ff0000;\par
+\}\par
+Example 3\par
+Text-shadow with red and blue neon glow:\par
+\par
+h1 \{\par
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;\par
+\}\par
+Example 4\par
+h1 \{\par
+  color: white;\par
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;\par
+\}\par
+================================================================================\par
+CSS Fonts\par
+Choosing the right font for your website is important!\par
+\par
+Font Selection is Important\par
+Choosing the right font has a huge impact on how the readers experience a website.\par
+\par
+The right font can create a strong identity for your brand.\par
+\par
+Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.\par
+\par
+Generic Font Families\par
+In CSS there are five generic font families:\par
+\par
+Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.\par
+Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.\par
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. \par
+Cursive fonts imitate human handwriting.\par
+Fantasy fonts are decorative/playful fonts.\par
+All the different font names belong to one of the generic font families. \par
+\par
+Difference Between Serif and Sans-serif Fonts\par
+Serif vs. Sans-serif\par
+Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts.\par
+\par
+Some Font Examples\par
+Generic Font Family\tab Examples of Font Names\par
+Serif\tab Times New Roman\par
+Georgia\par
+Garamond\par
+Sans-serif\tab Arial\par
+Verdana\par
+Helvetica\par
+Monospace\tab Courier New\par
+Lucida Console\par
+Monaco\par
+Cursive\tab Brush Script MT\par
+Lucida Handwriting\par
+Fantasy\tab Copperplate\par
+Papyrus\par
+ADVERTISEMENT\par
+The CSS font-family Property\par
+In CSS, we use the font-family property to specify the font of a text.\par
+\par
+Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".\par
+\par
+Tip: The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma. Read more about fallback fonts in the next chapter.\par
+\par
+Example\par
+Specify some different fonts for three paragraphs:\par
+\par
+.p1 \{\par
+  font-family: "Times New Roman", Times, serif;\par
+\}\par
+\par
+.p2 \{\par
+  font-family: Arial, Helvetica, sans-serif;\par
+\}\par
+\par
+.p3 \{\par
+  font-family: "Lucida Console", "Courier New", monospace;\par
+\}\par
+=================================================================================\par
+CSS Font Style\par
+Font Style\par
+The font-style property is mostly used to specify italic text.\par
+\par
+This property has three values:\par
+\par
+normal - The text is shown normally\par
+italic - The text is shown in italics\par
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)\par
+Example\par
+p.normal \{\par
+  font-style: normal;\par
+\}\par
+\par
+p.italic \{\par
+  font-style: italic;\par
+\}\par
+\par
+p.oblique \{\par
+  font-style: oblique;\par
+\}\par
+Font Weight\par
+The font-weight property specifies the weight of a font:\par
+\par
+Example\par
+p.normal \{\par
+  font-weight: normal;\par
+\}\par
+\par
+p.thick \{\par
+  font-weight: bold;\par
+\}\par
+Font Variant\par
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.\par
+\par
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.\par
+\par
+Example\par
+p.normal \{\par
+  font-variant: normal;\par
+\}\par
+\par
+p.small \{\par
+  font-variant: small-caps;\par
+\}\par
+===================\par
+CSS Font Size\par
+Font Size\par
+The font-size property sets the size of the text.\par
+\par
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.\par
+\par
+Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.\par
+\par
+The font-size value can be an absolute, or relative size.\par
+\par
+Absolute size:\par
+\par
+Sets the text to a specified size\par
+Does not allow a user to change the text size in all browsers (bad for accessibility reasons)\par
+Absolute size is useful when the physical size of the output is known\par
+Relative size:\par
+\par
+Sets the size relative to surrounding elements\par
+Allows a user to change the text size in browsers\par
+Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).\par
+\par
+Set Font Size With Pixels\par
+Setting the text size with pixels gives you full control over the text size:\par
+\par
+Example\par
+h1 \{\par
+  font-size: 40px;\par
+\}\par
+\par
+h2 \{\par
+  font-size: 30px;\par
+\}\par
+\par
+p \{\par
+  font-size: 14px;\par
+\}\par
+Tip: If you use pixels, you can still use the zoom tool to resize the entire page.\par
+\par
+Set Font Size With Em\par
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.\par
+\par
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.\par
+\par
+The size can be calculated from pixels to em using this formula: pixels/16=em\par
+\par
+Example\par
+h1 \{\par
+  font-size: 2.5em; /* 40px/16=2.5em */\par
+\}\par
+\par
+h2 \{\par
+  font-size: 1.875em; /* 30px/16=1.875em */\par
+\}\par
+\par
+p \{\par
+  font-size: 0.875em; /* 14px/16=0.875em */\par
+\}\par
+In the example above, the text size in em is the same as the previous example in pixels. However, with the em size, it is possible to adjust the text size in all browsers.\par
+\par
+Unfortunately, there is still a problem with older versions of Internet Explorer. The text becomes larger than it should when made larger, and smaller than it should when made smaller.\par
+\par
+ADVERTISEMENT\par
+Use a Combination of Percent and Em\par
+The solution that works in all browsers, is to set a default font-size in percent for the <body> element:\par
+\par
+Example\par
+body \{\par
+  font-size: 100%;\par
+\}\par
+\par
+h1 \{\par
+  font-size: 2.5em;\par
+\}\par
+\par
+h2 \{\par
+  font-size: 1.875em;\par
+\}\par
+\par
+p \{\par
+  font-size: 0.875em;\par
+\}\par
+Our code now works great! It shows the same text size in all browsers, and allows all browsers to zoom or resize the text!\par
+\par
+Responsive Font Size\par
+The text size can be set with a vw unit, which means the "viewport width".\par
+\par
+That way the text size will follow the size of the browser window:\par
+\par
+Hello World\par
+Resize the browser window to see how the font size scales.\par
+\par
+Example\par
+<h1 style="font-size:10vw">Hello World</h1>\par
+\highlight1 Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.\par
+\par
+\highlight0 CSS Font Property\par
+The CSS Font Property\par
+To shorten the code, it is also possible to specify all the individual font properties in one property.\par
+\par
+The font property is a shorthand property for:\par
+\par
+font-style\par
+font-variant\par
+font-weight\par
+font-size/line-height\par
+font-family\par
+Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used.\par
+\par
+Example\par
+Use font to set several font properties in one declaration:\par
+\par
+p.a \{\par
+  font: 20px Arial, sans-serif;\par
+\}\par
+\par
+p.b \{\par
+  font: italic small-caps bold 12px/30px Georgia, serif;\par
+\}\par
+}
+ 

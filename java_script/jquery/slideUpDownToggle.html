@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slide up down toggle</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        #d1,
+        #d2,
+        #d3,
+        #d4 {
+            padding: 20px;
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #d2 {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="d1">
+        click to slide down panal
+    </div>
+
+    <div id="d3">
+        click to slide up panal
+    </div>
+
+    <div id="d4">
+        click to slide toggle panal
+    </div>
+
+
+    <div id="d2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, est.</p>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $("#d1").click(() => {
+                $("#d2").slideDown("slow")
+            })
+        });
+
+
+        $(document).ready(() => {
+            $("#d3").click(() => {
+                $("#d2").slideUp("slow")
+            })
+        });
+
+
+        $(document).ready(() => {
+            $("#d4").click(() => {
+                $("#d2").slideToggle("slow")
+            })
+        });
+    </script>
+
+</body>
+
+</html>

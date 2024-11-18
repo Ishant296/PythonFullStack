@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>fadeTo</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        div {
+            background-color: aqua;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Hide or show</button>
+
+    <div id="d1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>welcome to my class</p>
+
+        <h1>welcome</h1>
+    </div>
+
+    <div id="d2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>welcome to my class</p>
+
+        <h1>welcome</h1>
+    </div>
+
+    <div id="d3">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>welcome to my class</p>
+
+        <h1>welcome</h1>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("button").click(function () {
+                    $("#d1").fadeTo("slow", 0.15);
+                });
+                $("button").click(function () {
+                    $("#d2").fadeTo("slow", 0.3);
+                });
+                $("button").click(function () {
+                    $("#d3").fadeTo("slow", 0.8);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

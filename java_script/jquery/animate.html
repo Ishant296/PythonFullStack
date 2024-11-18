@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        #d2 {
+            padding: 20px;
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+            width: 150px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Start Animation</button>
+    <div id="d2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, est.</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#d2").animate({
+                    left: "400px",
+                    opacity: "0.5",
+                    height: "+=150px",
+                    width: "+=150px"
+                })
+            })
+        })
+    </script>
+
+</body>
+
+</html>
