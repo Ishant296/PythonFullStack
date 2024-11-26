@@ -2,3 +2,19 @@
 background-color: gray;
 color: white;
 }
+
+.py-10 {
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.px-8{
+     padding-left: 2rem;
+     padding-right: 2rem;
+}
+
+.col-12{
+  
+    
+}

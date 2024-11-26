@@ -138,11 +138,11 @@
 
                     <div class="col-xxl-2 col-lg-3 col-md-6 col-5">
                         <a class="navbar-brand d-none d-lg-block" href="./index.html">
-                            <img src="/images/images/freshcart-logo.svg" alt="eCommerce HTML Template">
+                            <img src="./images/images/freshcart-logo.svg" alt="eCommerce HTML Template">
                         </a>
                         <div class="d-flex justify-content-between w-100 d-lg-none">
                             <a class="navbar-brand" href="./index.html">
-                                <img src="/images/images/freshcart-logo.svg" alt="eCommerce HTML Template">
+                                <img src="./images/images/freshcart-logo.svg" alt="eCommerce HTML Template">
                             </a>
                         </div>
                     </div>
@@ -181,14 +181,15 @@
                     <div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
                         <div class="list-inline">
                             <div role="button" class="me-5 text-muted position-relative  list-inline-item">
-                                <svg   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
                                     <path
                                         d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
                                 </svg>
-                                <span  class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                <span
+                                    class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                                     4
                                 </span>
                             </div>
@@ -200,20 +201,22 @@
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>
                             </div>
-                            <div role="button" class="me-5 me-lg-0 text-muted position-relative list-inline-item"  data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="offcanvasRight">
-                                
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            <div role="button" class="me-5 me-lg-0 text-muted position-relative list-inline-item"
+                                data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="offcanvasRight">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
                                     <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                                     <line x1="3" y1="6" x2="21" y2="6"></line>
                                     <path d="M16 10a4 4 0 0 1-8 0"></path>
                                 </svg>
-                                <span  class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                <span
+                                    class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                                     0
                                 </span>
 
-                              
+
 
                             </div>
                             <div role="button" class="d-inline-block d-lg-none list-inline-item"><button type="button"
@@ -239,26 +242,470 @@
 
 
 
-    <!-- cart canvas -->
+    <!-- Corousel images -->
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
 
-                              <!--off canvas for add to cart-->
-                              <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                   <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="./images/images/slide-1.jpg" class="w-100" alt="...">
+                    <div class=" position-absolute end-50 top-50 translate-middle-y   text-xs-center">
+                        <span class="badge text-bg-warning">Free Shipping - orders over $100</span>
+                        <h2 class="text-dark display-5 fw-bold mt-4">
+                            Free Shipping on
+                            <br>
+                            orders over
+                            <span class="text-primary">$100</span>
+                        </h2>
+                        <p class="lead">Free Shipping to First-Time Customers Only, After promotions and discounts are
+                            applied.</p>
+                        <a href="#!" class="btn btn-dark mt-3" tabindex="-1">
+                            Shop Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="./images/images/slider-2.jpg" class="w-100" alt="...">
+                    <div class=" position-absolute end-50 top-50 translate-middle-y       text-xs-center">
+                        <span class="badge text-bg-warning">Free Shipping - orders over $100</span>
+                        <h2 class="text-dark display-5 fw-bold mt-4">
+                            Free Shipping on
+                            <br>
+                            orders over
+                            <span class="text-primary">$100</span>
+                        </h2>
+                        <p class="lead">Free Shipping to First-Time Customers Only, After promotions and discounts are
+                            applied.</p>
+                        <a href="#!" class="btn btn-dark mt-3" tabindex="-1">
+                            Shop Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Featured Categories -->
+    <div class="container">
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight flex-grow-1">
+                <h2>Featured Categories</h2>
+            </div>
+            <div class="p-2 bd-highlight" style="font-size: 30px;color: green;">
+
+                <!-- <i class="fa-solid fa-circle-chevron-left"></i>
+                 <i class="fa-solid fa-circle-chevron-right"></i> -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Categories carousel -->
+    <div class="container mb-5">
+        <div id="abc" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-tea-coffee-drinks.jpg"
+                                            class="d-block mx-auto" alt="...">
+                                        <h6 class="text-center">Tea, Coffee & Drinks</h6>
+                                    </div>
                                 </div>
-                                <div class="offcanvas-body">
-                                      product
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-atta-rice-dal.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 class="text-center">Atta, Rice & Dal</h6>
+                                    </div>
                                 </div>
-                          
-                                <div class="subtotal"></div>
-                          
-                                <div class="d-flex justify-content-evenly">
-                                   <button type="button" class="btn btn-primary btn-sm">Continue Shopping</button>
-                                   <button type="button" class="btn btn-secondary btn-sm">Update Cart</button>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-baby-care.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 class="text-center">Baby care</h6>
+                                    </div>
                                 </div>
-                          
-                             </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-chicken-meat-fish.jpg"
+                                            class="d-block mx-auto" alt="...">
+                                        <h6 class="text-center">Chicken, Meat & Fish</h6>
+                                    </div>
+                                </div>
+                        </div></a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-baby-care.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Baby care</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-chicken-meat-fish.jpg"
+                                            class="d-block mx-auto" alt="...">
+                                        <h6 style="text-align: center;">Chicken, Meat & Fish</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-cleaning-essentials.jpg"
+                                            class="d-block mx-auto" alt="...">
+                                        <h6 style="text-align: center;">Cleaning Essentials</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-pet-care.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Pet Care</h6>
+                                    </div>
+                                </div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-dairy-bread-eggs.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Dairy, Bread & Eggs</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-snack-munchies.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Snack & Munchies</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-bakery-biscuits.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Bakery & Buiscuits</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="products.html">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <img src="./images/images/category-instant-food.jpg" class="d-block mx-auto"
+                                            alt="...">
+                                        <h6 style="text-align: center;">Instant Food</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- fruits and vegatable  -->
+
+
+
+
+    <div class="container">
+        <div class="row ms-5 ">
+            <div class="col-12 col-md-6 mb-3 mb-lg-0 ">
+                <div>
+                    <div class="py-10 px-8 rounded"
+                        style="background: url(./images/images/fruits&vege.png) no-repeat; background-size: 200px; background-position: center ; height: 200px;">
+                        <div class="py-4">
+                            <h3 class="fw-bold mb-1">Fruits &amp; Vegetables</h3>
+                            <p class="mb-4">
+                                Get Upto
+                                <span class="fw-bold">30%</span>
+                                Off
+                            </p>
+                            <a href="#!" class="btn btn-dark">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div>
+                    <div class="py-10 px-8 rounded"
+                        style="background: url(./images/images/bun.png) no-repeat; background-size:200px; background-position: center ; height: 200px;">
+                        <div class="py-4">
+                            <h3 class="fw-bold mb-1">Freshly Baked Buns</h3>
+                            <p class="mb-4">
+                                Get Upto
+                                <span class="fw-bold">25%</span>
+                                Off
+                            </p>
+                            <a href="#!" class="btn btn-dark">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Popular products -->
+    <div class="container mt-5">
+        <h3>Popular Products</h3><br>
+        <div class="row g-4 row-cols-lg-5 row-cols-2 row-cols-md-3 elements">
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Daily best sells -->
+    <div class="container">
+        <h3>Daily Best Sells</h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 bg-dark">
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-white">100% Organic</h4>
+                        <h4 class="card-title text-white">Coffee Beans</h4>
+                        <p class="card-text text-white">Get the best deal before <br>close.</p>
+                        <button type="button" class="btn btn-sm btn-success">Shop Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <img src="./images/images/coffee.png" class="card-img-bottom" alt="...">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/images/product-img-11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Tea, Coffee & Drinks</p>
+                        <a href="#">
+                            <h6>Roast Ground Coffee</h6>
+                        </a>
+
+                        <div class="d-flex" style="font-size:12px;">
+                            <p>$13</p>
+                            <p class="text-muted flex-grow-1"><del>$18</del></p>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            <p class="text-muted">4.5</p>
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-sm btn-success">+ Add to cart</button>
+                        </div>
+                        <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+                            <div class="p-2 bd-highlight tbox">00
+                                <p class="text-muted">Days</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">
+                                00 <p class="text-muted">Hours</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">00
+                                <p class="text-muted">Mins</p>
+                            </div>
+                        </div>
+                        <div class="tbox">00
+                            <p class="text-muted">Sec</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/images/product-img-12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Fruits & Vegetables</p>
+                        <a href="#">
+                            <h6>Crushed Tomatoes</h6>
+                        </a>
+
+                        <div class="d-flex" style="font-size:12px;">
+                            <p>$13</p>
+                            <p class="text-muted flex-grow-1"><strike>$18</strike></p>
+                            <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star-half-stroke text-warning"></i>
+                            <p class="text-muted">4.5</p>
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-sm btn-success">+ Add to cart</button>
+                        </div><br>
+                        <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+                            <div class="p-2 bd-highlight tbox">39 <p class="text-muted">Days</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">11 <p class="text-muted">Hours</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">41 <p class="text-muted">Mins</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">00<p class="text-muted">Sec</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/images/product-img-13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Fruits & Vegetables</p>
+                        <a href="#">
+                            <h6>Golden Pineapple</h6>
+                        </a>
+
+                        <div class="d-flex" style="font-size:12px;">
+                            <p>$13</p>
+                            <p class="text-muted flex-grow-1"><strike>$18</strike></p>
+                            <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star text-warning"></i><i
+                                class="fa-solid fa-star-half-stroke text-warning"></i>
+                            <p class="text-muted">4.5</p>
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-sm btn-success">+ Add to cart</button>
+                        </div><br>
+                        <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+                            <div class="p-2 bd-highlight tbox">11 <p class="text-muted">Days</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">11 <p class="text-muted">Hours</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">40 <p class="text-muted">Mins</p>
+                            </div>
+                            <div class="p-2 bd-highlight tbox">00<p class="text-muted">Sec</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- cart canvas  -->
+
+    <!--off canvas for add to cart-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            product
+        </div>
+
+        <div class="subtotal"></div>
+
+        <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn btn-primary btn-sm">Continue Shopping</button>
+            <button type="button" class="btn btn-secondary btn-sm">Update Cart</button>
+        </div>
+
+    </div>
 
 
 
@@ -268,4 +715,4 @@
 </html>
 
 
-<script src="product.js"></script>
+<script src="../product.js"></script>
